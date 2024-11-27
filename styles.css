@@ -561,7 +561,10 @@ body {
 }
 
 main {
+  display: flex;
   flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -593,8 +596,16 @@ footer {
   width: 100%;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .text-center {

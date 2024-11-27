@@ -11,10 +11,31 @@
       <h1>The Fund</h1>
     </header>
     <main class="main">
-      <!-- Your content here -->
+      <p id="animated-text"></p>
     </main>
     <footer>
-      <a href="#">coming soon...</a>
+      <a href="#">...</a>
     </footer>
+    <script>
+      const text = "coming soon...";
+      const element = document.getElementById("animated-text");
+      let index = 0;
+
+      function animateText() {
+        if (index < text.length) {
+          element.textContent += text.charAt(index);
+          index++;
+          setTimeout(animateText, 150); // 150ms delay between each letter
+        }
+      }
+
+      element.addEventListener("click", () => {
+        element.textContent = ""; // Clear the text
+        index = 0; // Reset the index
+        animateText(); // Reanimate the text
+      });
+
+      setTimeout(animateText, 500);
+    </script>
   </body>
 </html>
