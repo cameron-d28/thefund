@@ -707,7 +707,7 @@ footer {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
-.home-sidebar-item:active {
+.home-sidebar-item:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
